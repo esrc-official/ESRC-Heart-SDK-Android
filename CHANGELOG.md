@@ -1,0 +1,28 @@
+## Change Log
+
+### 1.0.0 (December 14, 2019)
+- Initial draft.
+
+### 1.1.0 (September 10, 2020)
+- Improve algorithm of heart rate estimation and emotion recognition.
+- Develop integration class.
+
+### 2.0.0 (November 03, 2020)
+- Improve structure of the SDK.
+
+### 2.1.0 (May 14, 2021)
+- Improve the SDK by asynchronous processing.
+- Add callback of heart rate variability analysis.
+
+### 2.2.0 (June 03, 2021)
+- Add feed method.
+
+### 2.2.1 (August 05, 2021)
+- Solve issues for asynchronous processing.
+
+### 2.2.2 (September 13, 2021)
+ - Improve algorithm of remote heart rate.
+ - Improve algorithm of heart rate variability analysis.
+ 
+### 2.3.0 (September 30, 2021)
+ - Improve algorithm of heart rate variability analysis.
