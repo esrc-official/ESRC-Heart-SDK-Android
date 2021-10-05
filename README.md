@@ -14,7 +14,7 @@
 
 ## About ESRC Heart SDK
 
-Through our **ESRC Heart SDK** for Android, you can efficiently integrate real-time recognition of heart response and emotions into your mobile app. This and other pages in the Getting Started provide the ESRC Heart SDK’s structure and installation steps, then goes through the preliminary steps of implementing the ESRC Face SDK in your own project.
+Through our **ESRC Heart SDK** for Android, you can efficiently integrate real-time recognition of heart response and emotions into your mobile app. This and other pages in the Getting Started provide the ESRC Heart SDK’s structure and installation steps, then goes through the preliminary steps of implementing the ESRC Heart SDK in your own project.
 
 ### Requirements
 
