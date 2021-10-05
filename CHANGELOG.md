@@ -26,3 +26,4 @@
  
 ### 2.3.0 (September 30, 2021)
  - Improve algorithm of heart rate variability analysis.
+ - Extract ESRC Heart SDK.
