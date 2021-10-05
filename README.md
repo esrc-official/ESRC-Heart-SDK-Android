@@ -1,4 +1,4 @@
-# ESRC Heart SDK for Android
+# ESRC Face SDK for Android
 
 [![Platform](https://img.shields.io/badge/platform-android-orange.svg)](https://github.com/esrc-official/ESRC-Heart-SDK-Android)
 [![Languages](https://img.shields.io/badge/language-java-orange.svg)](https://github.com/esrc-official/ESRC-Heart-SDK-Android)
@@ -14,7 +14,7 @@
 
 ## About ESRC Heart SDK
 
-Through our **ESRC Heart SDK** for Android, you can efficiently integrate real-time recognition of heart response and emotions into your mobile app. This and other pages in the Getting Started provide the ESRC Heart SDK’s structure and installation steps, then goes through the preliminary steps of implementing the ESRC Heart SDK in your own project.
+Through our **ESRC Heart SDK** for Android, you can efficiently integrate real-time recognition of heart response and emotions into your mobile app. This and other pages in the Getting Started provide the ESRC Heart SDK’s structure and installation steps, then goes through the preliminary steps of implementing the ESRC Face SDK in your own project.
 
 ### Requirements
 
@@ -53,7 +53,7 @@ android {
 
 ### Try the sample app
 
-Our sample app has the core features of the ESRC HeartSDK. Download the app from our [GitHub repository](https://github.com/esrc-official/ESRC-Heart-Android) to get an idea of what you can build with the actual SDK and start building in your project.
+Our sample app has the core features of the ESRC Heart SDK. Download the app from our [GitHub repository](https://github.com/esrc-official/ESRC-Heart-Android) to get an idea of what you can build with the actual SDK and start building in your project.
 
 > Note: The fastest way to see our ESRC Heart SDK in action is to build your app on top of our sample app. Make sure to change the application ID of the sample app to your own.
 
