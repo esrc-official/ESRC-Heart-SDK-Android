@@ -27,3 +27,7 @@
 ### 2.3.0 (September 30, 2021)
  - Improve algorithm of heart rate variability analysis.
  - Extract ESRC Heart SDK.
+
+### 2.4.0 (November 01, 2021)
+ - Add callback of measurement environment analysis.
+ - Add callback of confidence level of face detection.

@@ -44,8 +44,9 @@ android {
 
 |Function|Description|
 |---|---|
+|Measurement Environment Analysis| Analyze measurement environment including brightness. |
 |Face Detection| Detect a single face using a front camera on mobile. |
-|Heart Rate Estimation| Estimate heart rate from facial color variations and head move-ments caused by heartbeat using Remote Photoplethysmography and Ballistocardiography. |
+|Heart Rate Estimation| Estimate heart rate from facial color variations and head movements caused by heartbeat using Remote Photoplethysmography and Ballistocardiography. |
 |Heart Rate Variability Analysis| Extract 19 variables of heart rate variability reflecting autonomic nervous system activity from the accumulated heart rates. |
 |Engagement Recognition| Recognize engagement level from balance of autonomic nervous system by heart rate variability analysis. |
 
@@ -111,7 +112,7 @@ allprojects {
 
 ```groovy
 dependencies {
-    implementation name: 'esrc-heart-sdk-2.3.0', ext: 'aar'
+    implementation name: 'esrc-heart-sdk-2.4.0', ext: 'aar'
 }
 ```
 
@@ -185,31 +186,38 @@ getSupportFragmentManager().beginTransaction()
 
 ### Step 3: Start the ESRC Heart SDK
 
-Start the ESRC Heart SDK to recognize your heart response and emotion. To the `start()` method, pass the `ENABLE_DRAW` parameter for whether to visualize the face bounding box and the `ESRC.ESRCHandler` to handle the results. You should implement the callback method of `ESRC.ESRCHandler` interface. So, you can receive the results of face, heart rate, heart rate variability and engagement. Please refer to **[sample app](https://github.com/esrc-official/ESRC-Heart-Android)**.
+Start the ESRC Heart SDK to recognize your heart response and emotion. To the `start()` method, pass the `ESRCType.Property` to select analysis modules and the `ESRC.ESRCHandler` to handle the results. You should implement the callback method of `ESRC.ESRCHandler` interface. So, you can receive the results of face, heart rate, heart rate variability and emotion. Please refer to **[sample app](https://github.com/esrc-official/ESRC-Heart-Android)**.
 
 ```java
-ESRC.start(ENABLE_DRAW, new ESRC.ESRCHandler() {
-    @Override
-    public void onDetectedFace(ESRCTYPE.Face face, ESRCException e) {
-        if(e != null) {
-            // Handle error.
+ESRC.start(
+    new ESRCType.Property(
+        true,  // Whether visualize result or not.
+        true,  // Wheter analyze measurement environment or not.
+        true,  // Whether detect face or not.
+        true,  // Whether estimate remote hr or not. If enableFace is false, it is also automatically set to false.
+        true),  // Whether analyze HRV not not. If enableFace or enableRemoteHR is false, it is also automatically set to false.
+    new ESRC.ESRCHandler() {
+        @Override
+        public void onDetectedFace(ESRCTYPE.Face face, ESRCException e) {
+            if(e != null) {
+                // Handle error.
+            }
+            
+        // The face is detected.
+            // Through the “face” parameter of the onDetectedFace() callback method,
+            // you can get the location of the face from the result object
+            // that ESRC Heart SDK has passed to the onDetectedFace().
+            …
         }
         
-	// The face is detected.
-        // Through the “face” parameter of the onDetectedFace() callback method,
-        // you can get the location of the face from the result object
-        // that ESRC Heart SDK has passed to the onDetectedFace().
-        …
-    }
-    
-    // Please implement other callback method of ESRC.ESRCHandler interface.
-    @Override public void onNotDetectedFace( … ) { … }
-    @Override public void didChangedProgressRatioOnRemoteHR( … ) { … }
-    @Override public void onEstimatedRemoteHR( … ) { … }
-    @Override public void didChangedProgressRatioOnHRV( … ) { … }
-    @Override public void onAnalyzedHRV( … ) { … }
-    @Override public void onRecognizedEngagement( … ) { … }
-});
+        // Please implement other callback method of ESRC.ESRCHandler interface.
+        @Override public void onNotDetectedFace( … ) { … }
+        @Override public void onAnalyzedMeasureEnv( … ) { … }
+        @Override public void didChangedProgressRatioOnRemoteHR( … ) { … }
+        @Override public void onEstimatedRemoteHR( … ) { … }
+        @Override public void didChangedProgressRatioOnHRV( … ) { … }
+        @Override public void onAnalyzedHRV( … ) { … }
+    });
 ```
 
 ### (Optional) Step 4: Feed the ESRC Heart SDK
