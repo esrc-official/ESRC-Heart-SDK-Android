@@ -30,4 +30,4 @@
 
 ### 2.4.0 (November 01, 2021)
  - Add callback of measurement environment analysis.
- - Add callback of confidence level of face detection.
+ - Add class variable for confidence level to ESRCType.Face.
