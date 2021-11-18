@@ -1,4 +1,4 @@
-# ESRC Face SDK for Android
+# ESRC Heart SDK for Android
 
 [![Platform](https://img.shields.io/badge/platform-android-orange.svg)](https://github.com/esrc-official/ESRC-Heart-SDK-Android)
 [![Languages](https://img.shields.io/badge/language-java-orange.svg)](https://github.com/esrc-official/ESRC-Heart-SDK-Android)
