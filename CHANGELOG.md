@@ -32,3 +32,6 @@
  - Add callback of measurement environment analysis.
  - Add class variable for confidence level to ESRCType.Face.
  - Add property when the SDK is started.
+
+### 2.4.1 (November 18, 2021)
+ - Change window size of HRV analysis as 180s.
