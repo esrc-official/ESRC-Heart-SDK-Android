@@ -38,8 +38,6 @@ android {
 }
 ```
 
-<br />
-
 ### Key functions
 
 |Function|Description|
@@ -50,14 +48,13 @@ android {
 |Heart Rate Variability Analysis| Extract 19 variables of heart rate variability reflecting autonomic nervous system activity from the accumulated heart rates. |
 |Engagement Recognition| Recognize engagement level from balance of autonomic nervous system by heart rate variability analysis. |
 
-<br />
-
 ### Try the sample app
 
 Our sample app has the core features of the ESRC Heart SDK. Download the app from our [GitHub repository](https://github.com/esrc-official/ESRC-Heart-Android) to get an idea of what you can build with the actual SDK and start building in your project.
 
 > Note: The fastest way to see our ESRC Heart SDK in action is to build your app on top of our sample app. Make sure to change the application ID of the sample app to your own.
 
+<br />
 
 ## Install ESRC Heart SDK
 
