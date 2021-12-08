@@ -35,3 +35,6 @@
 
 ### 2.4.1 (November 18, 2021)
  - Change window size of HRV analysis as 180s.
+
+### 2.4.2 (December 08, 2021)
+ - Improve procedure for validation of license key.
