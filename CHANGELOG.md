@@ -45,3 +45,8 @@
 
 ### 2.4.5 (April 07, 2022)
  - Improve algorithm of engagement recognition.
+
+### 2.4.6 (April 21, 2022)
+ - Change some ESRCType class constant to class enum (basic facial expression, valence facial expression, and engagement).
+ - Remove onNotDetectedFace callback method -> Add isDetect parameter in ESRCType.Face class.
+ - Add identification parameter in all ESRCType class.

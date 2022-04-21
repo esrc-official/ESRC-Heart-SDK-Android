@@ -113,7 +113,7 @@ allprojects {
 
 ```groovy
 dependencies {
-    implementation name: 'esrc-heart-sdk-2.4.5', ext: 'aar'
+    implementation name: 'esrc-heart-sdk-2.4.6', ext: 'aar'
 }
 ```
 
@@ -204,7 +204,7 @@ ESRC.start(
                 // Handle error.
             }
             
-        // The face is detected.
+            // The face is detected.
             // Through the “face” parameter of the onDetectedFace() callback method,
             // you can get the location of the face from the result object
             // that ESRC Heart SDK has passed to the onDetectedFace().
@@ -212,7 +212,6 @@ ESRC.start(
         }
         
         // Please implement other callback method of ESRC.ESRCHandler interface.
-        @Override public void onNotDetectedFace( … ) { … }
         @Override public void onAnalyzedMeasureEnv( … ) { … }
         @Override public void didChangedProgressRatioOnRemoteHR( … ) { … }
         @Override public void onEstimatedRemoteHR( … ) { … }
@@ -223,7 +222,7 @@ ESRC.start(
 
 ### (Optional) Step 4: Feed the ESRC Heart SDK
 
-Feed `OpenCV Mat` on the ESRC Heart SDK. To the `feed()` method, pass the `Mat` image received using a camera in real-time. Please do it at 10 fps. You can skip this step if you follow Step 2: Bind the ESRC Fragment.
+Feed `Mat` on the ESRC Heart SDK. To the `feed()` method, pass the `Mat` image received using a camera in real-time. Please do it at 10 fps. You can skip this step if you follow Step 2: Bind the ESRC Fragment.
 
 ```java
 ESRC.feed(Mat);
