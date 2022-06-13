@@ -113,7 +113,7 @@ allprojects {
 
 ```groovy
 dependencies {
-    implementation name: 'esrc-heart-sdk-2.4.6', ext: 'aar'
+    implementation name: 'esrc-heart-sdk-2.5.0', ext: 'aar'
 }
 ```
 

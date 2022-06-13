@@ -50,3 +50,9 @@
  - Change some ESRCType class constant to class enum (basic facial expression, valence facial expression, and engagement).
  - Remove onNotDetectedFace callback method -> Add isDetect parameter in ESRCType.Face class.
  - Add identification parameter in all ESRCType class.
+
+### 2.5.0 (June 13, 2022)
+ - Add SNR variable in ESRCType.RemoteHR class.
+ - Add PPICount variable in ESRCType.HRV class.
+ - Improve procedure for validation of license key.
+ - Analyze HRV during 180 seconds.
