@@ -38,6 +38,7 @@
 
 ### 2.4.2 (December 08, 2021)
  - Improve procedure for validation of license key.
+ - Change window size of HRV analysis as 60s.
 
 ### 2.4.4 (March 28, 2022)
  - Improve algorithm of heart rate variability analysis.
@@ -54,4 +55,4 @@
  - Add SNR variable in ESRCType.RemoteHR class.
  - Add PPICount variable in ESRCType.HRV class.
  - Improve procedure for validation of license key.
- - Analyze HRV during 180 seconds.
+ - Change window size of HRV analysis as 180s.
