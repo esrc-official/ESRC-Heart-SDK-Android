@@ -40,14 +40,13 @@
  - Improve procedure for validation of license key.
 
 ### 2.4.4 (March 28, 2022)
- - Change facial expression recognition to basic facial expression recognition.
- - Add valence facial expression recognition.
+ - Improve algorithm of heart rate variability analysis.
 
 ### 2.4.5 (April 07, 2022)
  - Improve algorithm of engagement recognition.
 
 ### 2.4.6 (April 21, 2022)
- - Change some ESRCType class constant to class enum (basic facial expression, valence facial expression, and engagement).
+ - Change some ESRCType class constant to class enum (engagement).
  - Remove onNotDetectedFace callback method -> Add isDetect parameter in ESRCType.Face class.
  - Add identification parameter in all ESRCType class.
 
