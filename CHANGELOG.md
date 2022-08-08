@@ -56,3 +56,12 @@
  - Add PPICount variable in ESRCType.HRV class.
  - Improve procedure for validation of license key.
  - Change window size of HRV analysis as 180s.
+
+
+### 2.5.1 (Agust 01, 2022)
+ - Add verbose parameter for printing information about ESRC progressing in ESRCProperty clas.
+
+### 2.5.2 (Agust 08, 2022)
+ - Add 'getDisplayRotation' and 'getImageRotation' functions in ESRC class.
+ - Change window size of HRV analysis as 60s.
+
