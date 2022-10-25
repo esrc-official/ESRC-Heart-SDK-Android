@@ -66,3 +66,6 @@
 
 ### 2.5.3 (September 06, 2022)
  - Improve RPPG and HRV algorithm.
+
+### 2.5.7 (October 25, 2022) 
+ - Improve ESRCFragment for display rotation.
