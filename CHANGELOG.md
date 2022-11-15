@@ -73,6 +73,6 @@
 ### 2.5.8 (November 04, 2022)
  - Improve procedure for validation of license key.
 
-### 2.6.0
+### 2.6.0 (November 15, 2022)
  - Improve face detection. 
  - Correct threshold for brightness analysis.
