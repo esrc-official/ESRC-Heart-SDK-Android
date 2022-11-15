@@ -81,7 +81,9 @@ dependencies {
     implementation project(path: ':opencv-3.4.11') // OpenCV
     implementation 'org.tensorflow:tensorflow-lite:0.0.0-nightly' // TensorFlow
     implementation 'io.reactivex.rxjava3:rxandroid:3.0.0' // RxJava
-    implementation 'io.reactivex.rxjava3:rxjava:3.0.7' // RxJava    
+    implementation 'io.reactivex.rxjava3:rxjava:3.0.7' // RxJava
+    implementation 'com.google.mediapipe:solution-core:latest.release'  // Mediapipe
+    implementation 'com.google.mediapipe:facemesh:latest.release'  // Mediapipe
 }
 ```
 
