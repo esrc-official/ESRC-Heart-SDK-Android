@@ -198,7 +198,10 @@ ESRC.start(
         true,  // Whether analyze measurement environment or not.
         true,  // Whether detect face or not.
         true,  // Whether estimate remote hr or not. If enableFace is false, it is also automatically set to false.
-        true),  // Whether analyze HRV not not. If enableFace or enableRemoteHR is false, it is also automatically set to false.
+        true,  // Whether analyze HRV not not. If enableFace or enableRemoteHR is false, it is also automatically set to false.
+        true,  // Whether recognize engagement or not. If enableHRV is false, it is also automatically set to false.
+        true, // Whether recognize mental disorder or not. If enableHRV is false, it is also automatically set to false.
+        true);  // Whether print information about ESRC processing.
     new ESRC.ESRCHandler() {
         @Override
         public void onDetectedFace(ESRCTYPE.Face face, ESRCException e) {
@@ -219,6 +222,8 @@ ESRC.start(
         @Override public void onEstimatedRemoteHR( … ) { … }
         @Override public void didChangedProgressRatioOnHRV( … ) { … }
         @Override public void onAnalyzedHRV( … ) { … }
+        @Override public void onRecognizedEngagement( … ) { … }
+        @Override public void onRecognizedMentalDisorder( … ) { … }
     });
 ```
 

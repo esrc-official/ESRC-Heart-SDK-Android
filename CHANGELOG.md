@@ -76,3 +76,7 @@
 ### 2.6.0 (November 15, 2022)
  - Improve face detection. 
  - Correct threshold for brightness analysis.
+
+### 2.6.1 (December 06, 2022)
+ - Improve HRV algorithm.
+ - Release algorithm of 'mental disorder recognition'.
