@@ -223,7 +223,6 @@ ESRC.start(
         @Override public void didChangedProgressRatioOnHRV( … ) { … }
         @Override public void onAnalyzedHRV( … ) { … }
         @Override public void onRecognizedEngagement( … ) { … }
-        @Override public void onRecognizedMentalDisorder( … ) { … }
     });
 ```
 
