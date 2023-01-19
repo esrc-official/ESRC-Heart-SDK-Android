@@ -115,7 +115,7 @@ allprojects {
 
 ```groovy
 dependencies {
-    implementation name: 'esrc-heart-sdk-2.5.3', ext: 'aar'
+    implementation name: 'esrc-heart-sdk-2.6.2', ext: 'aar'
 }
 ```
 
@@ -200,7 +200,6 @@ ESRC.start(
         true,  // Whether estimate remote hr or not. If enableFace is false, it is also automatically set to false.
         true,  // Whether analyze HRV not not. If enableFace or enableRemoteHR is false, it is also automatically set to false.
         true,  // Whether recognize engagement or not. If enableHRV is false, it is also automatically set to false.
-        true, // Whether recognize mental disorder or not. If enableHRV is false, it is also automatically set to false.
         true);  // Whether print information about ESRC processing.
     new ESRC.ESRCHandler() {
         @Override
@@ -223,7 +222,6 @@ ESRC.start(
         @Override public void didChangedProgressRatioOnHRV( … ) { … }
         @Override public void onAnalyzedHRV( … ) { … }
         @Override public void onRecognizedEngagement( … ) { … }
-        @Override public void onRecognizedMentalDisorder( … ) { … }
     });
 ```
 

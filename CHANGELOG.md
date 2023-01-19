@@ -79,4 +79,6 @@
 
 ### 2.6.1 (December 06, 2022)
  - Improve HRV algorithm.
- - Release algorithm of 'mental disorder recognition'.
+
+### 2.6.2 (January 19, 2023) 
+ - Improve ESRCFragement.
