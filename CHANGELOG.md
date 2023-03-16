@@ -79,6 +79,10 @@
 
 ### 2.6.1 (December 06, 2022)
  - Improve HRV algorithm.
+<<<<<<< HEAD
 
 ### 2.6.2 (January 19, 2023) 
  - Improve ESRCFragement.
+
+### 2.6.3 (March 16, 2023)
+ - Release remote respiration estimation.
